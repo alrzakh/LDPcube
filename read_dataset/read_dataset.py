@@ -1,6 +1,3 @@
-import random
-
-
 def read_data(file_name):
 
     text_file = open(file_name).read().splitlines()
