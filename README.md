@@ -1,6 +1,7 @@
-<p style="text-align: right; margin-top: 0;">
+<div style="position: absolute; top: 0; right: 0;">
   <img src="./images/LDP^3.png" alt="Repository Logo" width="200"/>
-</p>
+</div>
+
 
 # LDPcube
 Local Differential Privacy Post-Processing
