@@ -66,12 +66,12 @@ Our code is implemented and tested on Python3.12. Our code uses the following pa
 To execute the program, use the following command:
 
 ```sh
-python3 main.py -e EPSILON -p PROTOCOLS -m METHODS -r REPEAT -t THREAD_NUMBER -d DATASET -u UTILITY_METRIC
+python3 ldpcube.py -e EPSILON -p PROTOCOLS -m METHODS -r REPEAT -t THREAD_NUMBER -d DATASET -u UTILITY_METRIC
 ```
 
 ### Command-Line Arguments
 
-- `-e EPSILON`: Specifies the privacy budget (\(\varepsilon\)).
+- `-e EPSILON`: Specifies the privacy budget ε.
 - `-p PROTOCOLS`: Defines the LDP protocol(s) to use. Possible protocols are those implemented in the Protocol Module. Multiple protocols can be specified, or use `"all"` to run experiments with all available protocols.
 - `-m METHODS`: Defines the post-processing (PP) method(s) to use. Available methods are those in the Post-Processing Module. Multiple methods can be specified, or use `"all"` to run experiments with all available methods.
 - `-r REPEAT`: Specifies the number of repetitions per experiment to account for the randomness of LDP and ensure statistical significance (e.g., `10`).
@@ -82,15 +82,15 @@ python3 main.py -e EPSILON -p PROTOCOLS -m METHODS -r REPEAT -t THREAD_NUMBER -d
 ### Example Usage
 
 ```sh
-python3 main.py -e 1.0 -p RAPPOR -m NONE -r 10 -t 4 -d data.csv -u MSE
+python3 ldpcube.py -e 1.0 -p RAPPOR -m Norm-Sub -r 10 -t 4 -d data.csv -u l1
 ```
 
 This command runs the program with:
-- `\varepsilon = 1.0`
+- `ε = 1.0`
 - `RAPPOR` as the LDP protocol
-- No post-processing method (`NONE`)
+- `Norm-Sub` as the PP method
 - 10 repetitions per experiment
 - 4 parallel threads
 - `data.csv` as the dataset
-- `MSE` (Mean Squared Error) as the utility metric
+- `l1` (L1 Distance) as the utility metric
 
