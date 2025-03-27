@@ -1,8 +1,7 @@
 <p align="center">
   <img src="./images/LDP^3.png" alt="Repository Logo" width="200"/>
 </p>
-
-# Local Differential Privacy with Post Processing - LDP³
+<h1 align="center">Local Differential Privacy with Post Processing - LDP³</h1>
 
 This repository contains a snapshot of the code for LDP³: a comprehensive post-processing framework for Local Differential Privacy (LDP). LDP³ integrates multiple post-processing techniques to enhance the utility of privatized data while maintaining strong privacy guarantees. It also includes evaluation metrics and benchmarking tools to assess different LDP protocols and post-processing strategies. Our works on LDP³ provide insights into improving the usability of LDP-collected data across various applications: 
 
