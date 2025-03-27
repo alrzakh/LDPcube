@@ -103,3 +103,13 @@ If you use our code, please cite:
   organization={IFIP TC-11}
 }
 ```
+
+```
+@inproceedings{balioglu2025ldpcube,
+  title={LDP³: An Extensible and Multi-Threaded Toolkit for Local Differential Privacy Protocols and Post-Processing Methods},
+  author={Balioglu, Berkay Kemal and Khodaie, Alireza and Gursoy, Mehmet Emre},
+  booktitle={IEEE International Conference on Cyber Security and Resilience (IEEE CSR 2025)},
+  year={2025},
+  organization={IEEE CSR}
+}
+```
