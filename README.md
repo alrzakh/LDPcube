@@ -1,4 +1,4 @@
-<div style="position: absolute; top: 0; right: 0;">
+<div style="display: flex; justify-content: center;">
   <img src="./images/LDP^3.png" alt="Repository Logo" width="200"/>
 </div>
 
