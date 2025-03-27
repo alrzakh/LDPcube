@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Local Differential Privacy with Post Processing - LDP³</h1>
 
-This repository contains a snapshot of the code for LDP³: a comprehensive post-processing framework for Local Differential Privacy (LDP). LDP³ integrates multiple post-processing techniques to enhance the utility of privatized data while maintaining strong privacy guarantees. It also includes evaluation metrics and benchmarking tools to assess different LDP protocols and post-processing strategies. Our works on LDP³ provide insights into improving the usability of LDP-collected data across various applications: 
+This repository contains a snapshot of the code for LDP³: a comprehensive post-processing toolkit for Local Differential Privacy (LDP). LDP³ integrates multiple post-processing techniques to enhance the utility of privatized data while maintaining strong privacy guarantees. It also includes evaluation metrics and benchmarking tools to assess different LDP protocols and post-processing strategies. Our works on LDP³ provide insights into improving the usability of LDP-collected data across various applications: 
 
 ```
 LDP³: An Extensible and Multi-Threaded Toolkit for Local Differential Privacy Protocols and Post-Processing Methods
@@ -23,7 +23,7 @@ This directory contains implementations of six state-of-the-art Local Differenti
 - **Generalized Randomized Response (GRR)**  
 - **Binary Local Hashing (BLH)**  
 - **Optimized Local Hashing (OLH)**  
-- **simple-RAPPOR**  
+- **Randomized Aggregatable Privacy-Preserving Ordinal Response (RAPPOR)**  
 - **Optimized Unary Encoding (OUE)**  
 - **Subset Selection (SS)**  
 
@@ -45,16 +45,16 @@ We provide implementations of four different error metrics to evaluate the perfo
 - **Earth Mover's Distance (EMD)**  
 
 ### **data_loader**  
-This directory contains scripts for loading and preprocessing datasets used in the experiments.  
+This directory contains scripts for loading and preprocessing the dataset to be used in the experiments.  
 
 ### **utils**  
 This directory includes utility scripts for input parsing, result formatting, and other helper functions used throughout the toolkit.  
 
 ### **ldpcube.py**  
-The main script to execute the LDP³ toolkit, integrating LDP protocols, post-processing methods, and evaluation metrics.  
+The main script to execute the LDP³ toolkit, integrating LDP protocols, post-processing methods, and evaluation metrics in a multi-threaded manner.  
 
 ## Dependencies
-Our code is implemented and tested on Python3.12. Our code uses the following packages.
+Our code is implemented and tested on Python 3.12. Our code uses the following packages.
 - `numpy==2.1.3`  
 - `tabulate==0.9.0`
 - `xxhash==3.5.0` 
@@ -80,13 +80,13 @@ python3 ldpcube.py -e EPSILON -p PROTOCOLS -m METHODS -r REPEAT -t THREAD_NUMBER
 ### Example Usage
 
 ```sh
-python3 ldpcube.py -e 1.0 -p RAPPOR -m Norm-Sub -r 10 -t 4 -d data.csv -u l1
+python3 ldpcube.py -e 1.0 -p rappor -m norm-sub -r 10 -t 4 -d data.csv -u l1
 ```
 
 This command runs the program with:
 - `ε = 1.0`
-- `RAPPOR` as the LDP protocol
-- `Norm-Sub` as the PP method
+- `rappor` as the LDP protocol
+- `norm-sub` as the PP method
 - 10 repetitions per experiment
 - 4 parallel threads
 - `data.csv` as the dataset
@@ -97,7 +97,7 @@ If you use our code, please cite:
 ```
 @inproceedings{khodaie2025benchmark,
   title={Post-Processing in Local Differential Privacy: An Extensive Evaluation and Benchmark Platform},
-  author={Khodaie, Alireza and Balioglu, Berkay Kemal and Gursoy, Mehmet Emre},
+  author={Khodaie, Alireza and Balioglu, Berkay Kemal and Gursoy, M. Emre},
   booktitle={Proceedings of the 40th International Conference on ICT Systems Security and Privacy Protection (IFIP SEC 2025)},
   year={2025},
   organization={IFIP TC-11}
@@ -107,7 +107,7 @@ If you use our code, please cite:
 ```
 @inproceedings{balioglu2025ldpcube,
   title={LDP³: An Extensible and Multi-Threaded Toolkit for Local Differential Privacy Protocols and Post-Processing Methods},
-  author={Balioglu, Berkay Kemal and Khodaie, Alireza and Gursoy, Mehmet Emre},
+  author={Balioglu, Berkay Kemal and Khodaie, Alireza and Gursoy, M. Emre},
   booktitle={IEEE International Conference on Cyber Security and Resilience (IEEE CSR 2025)},
   year={2025},
   organization={IEEE CSR}
