@@ -55,9 +55,9 @@ The main script to execute the LDP³ toolkit, integrating LDP protocols, post-pr
 
 ## Dependencies
 Our code is implemented and tested on Python3.12. Our code uses the following packages.
-- **numpy==2.1.3**  
-- **tabulate==0.9.0**
-- **xxhash==3.5.0**  
+- `numpy==2.1.3`  
+- `tabulate==0.9.0`
+- `xxhash==3.5.0` 
 
 ## Running the Code
 
