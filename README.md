@@ -97,7 +97,7 @@ This command runs the program with:
 If you use our code, please cite:
 
 ```
-@inproceedings{gursoy2018utility,
+@inproceedings{khodaie2025benchmark,
   title={Post-Processing in Local Differential Privacy: An Extensive Evaluation and Benchmark Platform},
   author={Khodaie, Alireza and Balioglu, Berkay Kemal and Gursoy, Mehmet Emre},
   booktitle={Proceedings of the 40th International Conference on ICT Systems Security and Privacy Protection (IFIP SEC 2025)},
