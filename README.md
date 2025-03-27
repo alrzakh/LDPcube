@@ -94,3 +94,14 @@ This command runs the program with:
 - `data.csv` as the dataset
 - `l1` (L1 Distance) as the utility metric
 
+If you use our code, please cite:
+
+```
+@inproceedings{gursoy2018utility,
+  title={Post-Processing in Local Differential Privacy: An Extensive Evaluation and Benchmark Platform},
+  author={Khodaie, Alireza and Balioglu, Berkay Kemal and Gursoy, Mehmet Emre},
+  booktitle={Proceedings of the 40th International Conference on ICT Systems Security and Privacy Protection (IFIP SEC 2025)},
+  year={2025},
+  organization={IFIP TC-11}
+}
+```
