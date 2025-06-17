@@ -11,11 +11,11 @@ import numpy as np
 from protocols import grr, rappor, olh, oue, blh, subset
 from protocols.variance import calculate_variances
 
-from read_dataset import read_dataset
+from data_reader import read_dataset
 
-from postprocessing import norm, norm_mul, norm_cut, norm_sub, base_pos, power
+from post_processing import norm, norm_mul, norm_cut, norm_sub, base_pos, power
 
-from Metrics import l1_error, l2_error, kl_divergence
+from metrics import l1_error, l2_error, kl_divergence
 
 from utils.argparse_utils import create_parser
 from utils.file_operations import write_dict_to_csv
