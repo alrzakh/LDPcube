@@ -80,7 +80,7 @@ python3 ldpcube.py -e EPSILON -p PROTOCOLS -m METHODS -r REPEAT -t THREAD_NUMBER
 ### Example Usage
 
 ```sh
-python3 ldpcube.py -e 1.0 -p rappor -m norm-sub -r 10 -t 4 -d data.csv -u l1
+python3 ldpcube.py -e 1.0 -p rappor -m norm_sub -r 10 -t 4 -d data.csv -u l1
 ```
 
 This command runs the program with:
