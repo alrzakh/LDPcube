@@ -7,7 +7,7 @@ def calculate_variances(protocol, epsilon, domain_size, population_size):
     
     var = 0
     if protocol == "grr" or protocol == "subset":
-        nominator = e_eps * domain_size - 2
+        nominator = e_eps + domain_size - 2
         denominator = population_size * ((e_eps - 1) ** 2)
         var = nominator / denominator
     elif protocol == "rappor":
